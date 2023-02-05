@@ -1,5 +1,7 @@
 # python-practices
 This is my python paractices
+contains the following  :
+
 
 ## Text :
 This folder has exercises related to text processing.
