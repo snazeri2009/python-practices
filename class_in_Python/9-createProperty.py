@@ -13,9 +13,7 @@ class Product:
         return self.__ProductName
 
     def set_ProductName(self, value):  # getter
-        if value < 0:
-            raise ValueError("this is not a valid price")
-        self.__ProductName = value
+         self.__ProductName = value
 
     # property has 4 arguments   get_ite,set_item,delete_item,documentation
     # return the object that can set and get the ProductName
