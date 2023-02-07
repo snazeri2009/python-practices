@@ -7,24 +7,24 @@ class Product:
 
     # ===============================================   properties =================================
 
-    # ===============================================   Name of the property ================================================
-    # this is a property of price
-    def get_ProductName(self):  # setter
+    # ===============================================   Name  ======================================
+    # ProductName property
+    def get_ProductName(self):  # getter
         return self.__ProductName
 
-    def set_ProductName(self, value):  # getter
-         self.__ProductName = value
+    def set_ProductName(self, value):  # setter
+        self.__ProductName = value
 
     # property has 4 arguments   get_ite,set_item,delete_item,documentation
     # return the object that can set and get the ProductName
     ProductName = property(get_ProductName, set_ProductName)
-    # ===============================================   price of the property ================================================
-    # this is a property of price
+    # ===============================================   price  =====================================
+    # price property
 
-    def get_prices(self):  # setter
+    def get_prices(self):  # getter
         return self.__price
 
-    def set_prices(self, value):  # getter
+    def set_prices(self, value):  # setter
         if value < 0:
             raise ValueError("this is not a valid price")
         self.__price = value
@@ -32,13 +32,13 @@ class Product:
     # property has 4 arguments   get_ite,set_item,delete_item,documentation
     # return the object that can set and get the prices
     price = property(get_prices, set_prices)
-    # ===============================================   price of the property ================================================
-    # this is a property of price
+    # ===============================================   count =========================================
+    # Count property
 
-    def get_Count(self):  # setter
+    def get_Count(self):  # getter
         return self.__CountProduct
 
-    def set_Count(self, value):  # getter
+    def set_Count(self, value):  # setter
         if value < 0:
             raise ValueError("this is not a valid price")
         self.__CountProduct = value
@@ -55,4 +55,3 @@ print("count is : ", myProduct.CountProduct)  # call get_Count(self):
 print("price is : ", myProduct.price)  # call get_prices(self):
 # myProduct.price = 10  # call set_prices(self):
 # myProduct.price=-10 #show an error message
-

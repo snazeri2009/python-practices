@@ -11,40 +11,41 @@ class Product:
         self.ProductName = _name
         self.Count = _count
     # ===============================================   properties =================================
-    # ===============================================   Name of the property ================================================
-    # this is a property of price
+    # ===============================================   Name       =================================
+    # ProductName property
+
     @property
-    def ProductName(self):  # setter
+    def ProductName(self):   # getter
         return self.__ProductName
 
     @ProductName.setter
-    def ProductName(self, value):  # getter
+    def ProductName(self, value):
         self.__ProductName = value
 
-    # ===============================================   price of the property ================================================
-    # this is a property of price
+    # ===============================================   price  ====================================
+    # price property
     @property
-    def price(self):  # setter
+    def price(self):    # getter
         return self.__price
 
     @price.setter
-    def price(self, value):  # getter
+    def price(self, value):
         if value < 0:
             raise ValueError("this is not a valid price")
         self.__price = value
-    # ===============================================   price of the property ================================================
-    # this is a property of price
+    # ===============================================   Count  ====================================
+    # count property
 
     @property
-    def Count(self):  # setter
+    def Count(self):  # getter
         return self.__CountProduct
 
     @Count.setter
-    def Count(self, value):  # getter
+    def Count(self, value):
         if value < 0:
             raise ValueError("this is not a valid price")
         self.__CountProduct = value
-    # ===============================================
+    # =============================================== ================================================
 
 
 myProduct = Product(_name='kola', _count=10, _price=25000)
