@@ -11,7 +11,8 @@ class myDataStructures:
 
     # add count to data structure
     # if key is not with get you can add key to data structure
-    def add(self,  key):
+    #__data is private data structure
+    def add(self,  key):   #__data is hidden from any object from this clsss
         self.__data[key.lower()] = self.__data.get(key.lower(), 0) + 1
 
     # get count from data structure .this is a instance method
