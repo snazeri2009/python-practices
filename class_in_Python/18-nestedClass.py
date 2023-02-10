@@ -1,4 +1,4 @@
-#this is a nested class example
+# this is a nested class example
 class OuterClass:  # this is outer Class
     class _InternalClass:  # this is internal class
         def __init__(self, value):
