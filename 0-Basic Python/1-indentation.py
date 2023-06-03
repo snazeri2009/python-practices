@@ -8,7 +8,9 @@ if 5 > 2:
 
 
 # Error for indentation
-if 5 > 2:
-    print("Five is greater than three!")
-  print("Five is greater than three!")   # This Error is caused  for indentation for if statement
-print("**************************")
+# if 5 > 2:
+#    print("Five is greater than three!")
+#  print("Five is greater than three!")   # This Error is caused  for indentation for if statement
+# print("**************************")
+n = 17
+print(n)

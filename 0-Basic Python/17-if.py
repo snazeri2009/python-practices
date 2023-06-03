@@ -2,10 +2,11 @@ print("this program show max number betweem 2 numbers ")
 a = int(input("enter number 1 :"))
 b = int(input("enter number 2 :"))
 ##################################
-if b > a:
-    print("max is ", b)
-else:
+if a > b:
     print("max is ", a)
+else:
+    print("max is ", b)
+# ==============================================================
 
 # Short Hand If
 if a > b:

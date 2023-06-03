@@ -19,6 +19,9 @@ print(x, y, z)
 # ==================================
 # packed Value
 packed = ["test1", "test2", "test3"]
+x="test1"
+y="text2"
+z="test3"
 x, y, z = packed  # unpack value to three variable
 print(x, y, z)
 # ==================================

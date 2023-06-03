@@ -5,7 +5,7 @@ z = input("enter number3 :")
 
 # find max from 2 number
 # =========================
-if int(x) > int(y):
+if int(x) >= int(y):
     temp = x
 else:
     temp = y
